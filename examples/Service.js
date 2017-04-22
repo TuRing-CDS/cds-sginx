@@ -12,3 +12,5 @@ service.on('event', (ctx, data, callback) => {
         ctx.emit('aaa', data+":"+new Date());
     }, 1000);
 });
+
+service.on('error',console.log);
